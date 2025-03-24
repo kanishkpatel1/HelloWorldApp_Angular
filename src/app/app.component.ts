@@ -9,10 +9,8 @@ export class AppComponent implements OnInit {
   title = 'Helloworld';
 
   imgUrl = "../assets/BL_logo_square_jpg.jpg";
-  url = "https://www.bridgelabz.com";  
-
- 
-
+  url = "https://www.bridgelabz.com";
+  userName: string = ""; 
 
 
   ngOnInit(): void {
@@ -24,3 +22,6 @@ export class AppComponent implements OnInit {
     console.log("Save button is clicked!", $event);
     window.open(this.url, "_blank");
   }
+
+}
+

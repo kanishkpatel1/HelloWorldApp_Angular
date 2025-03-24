@@ -5,6 +5,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms'; 
 
 // Whenever CLI is used to generate new components and services, it
 // will automatically update this file to import and add them here.
@@ -24,7 +25,8 @@ declarations: [
 // Various imports needed for Application can be added here.
 imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule  //Required for ngModel
 ],
 
 // Typically Services like http-services are added to providers
